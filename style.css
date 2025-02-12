@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --background: hsl(30, 38%, 92%);
+    --priceAndButton: hsl(158, 36%, 37%);
+    --text-color: hsl(228, 12%, 48%);
+
+    font-size: 14px;
+
+    --montserrat: font-family: "Montserrat", serif;
+    --fraunces: font-family: "Fraunces", serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    font-family: var(--montserrat);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display: flex;
+    background-color: white;
+    width: 75vh;
+    height: auto;
+    border-radius: 0.7rem;
+}
+
+main .image{
+    flex: 1;
+    overflow: hidden;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    filter: saturate(10), sepia(0.1) brightness(0.9);  
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content{
+    flex: 1;
+}
