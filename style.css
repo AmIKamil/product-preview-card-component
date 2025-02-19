@@ -48,6 +48,8 @@ body .mainContainer{
     object-fit: cover;
     border-top-left-radius: 0.7rem;
     border-bottom-left-radius: 0.7rem;
+    filter: contrast(1.5);
+    filter: brightness(0.95);
 }
 
 .mainContainer .writtenPart{
@@ -57,10 +59,13 @@ body .mainContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.8rem 2rem;    
+    padding: 1.8rem 1.35rem 1.8rem 2.2rem;  
+    color: var(--text-color);  
+    filter: blur(0.5px);
 }
 
 .category{
+    /*border:2px solid brown;*/
     font-size: 0.80rem;
     color: var(--text-color);
     letter-spacing: 4px;
@@ -69,23 +74,76 @@ body .mainContainer{
     font-weight: 500;
     text-transform: uppercase;
 }
-/* finished here*/
-.header{
-    border:2px solid brown;
-    height: 5vh;
-}
 
+.header{
+    /*border: 2px solid brown;*/
+    padding: 0 1.35rem 0 0;
+    height: 7rem;
+    font-weight: 800;
+    font-size: 1.05rem;
+    font-family: "Fraunces", serif;
+    color: var(--header-color);
+    line-height: 1;
+}
+/* finished here*/
 .description{
-    border:2px solid brown;
-    height: 5vh;
+    /*border:2px solid brown;*/
+    height: 8rem;
+    margin-top: -0.5rem;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.5;
 }
 
 .price{
-    border:2px solid brown;
+    /*border:2px solid brown;*/
+    margin-top: -2rem;
     height: 5vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.priceNew{
+    color: var(--priceAndButton);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.priceOld{
+    text-decoration: line-through; 
+    margin-right: 4rem;
 }
 
 .button{
-    border:2px solid brown;
-    height: 5vh;
+    margin-right: 1rem;    
+}
+
+button{
+    /*border:2px solid brown;*/
+    border-radius: 0.5rem;
+    border: none;
+    height: 3.2rem;
+    margin-right: 2rem;
+    width: 100%;
+    color: white;
+    background-color: var(--priceAndButton);
+    font-family: "Montserrat", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+button:hover{
+    background-color: hsl(159, 35%, 21%);
+    cursor: pointer;
 }
